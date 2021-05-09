@@ -22,3 +22,9 @@ This repository contains scripts which will help to deploy the code in one go.
 - `my_script.txt`  It contains the user data.
 - `aws_deployment.sh` One command deployment script if there is any change in the code then in that case just run this script.
 - `Dockerfile` Create image for containerization of application.
+
+## Important Notes To run Scripts
+- Make sure you have required credentials of IAM user on the given path or edit accordingly.
+- Make changes according to your requirement in the script like what kind of instance you want to launch.
+- Modify security groups.
+- Make Autoscaling subnet private and Load Balancer subnet public and modify accordingly the script.
