@@ -5,5 +5,5 @@ sudo usermod -a -G docker ec2-user
 sudo chkconfig docker on
 sudo yum install git -y
 git clone  https://github.com/redsarvesh/react-express-app.git
-sudo docker build -t citymall react-express-app/.
+sudo docker build -t citymall /react-express-app/.
 sudo docker run -itd -p 8080:8080 citymall 
