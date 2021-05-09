@@ -21,5 +21,4 @@ sudo aws autoscaling create-launch-configuration --launch-configuration-name my-
 
 sudo aws autoscaling create-auto-scaling-group --auto-scaling-group-name my-asg --launch-configuration-name my-launch-config --load-balancer-names my-load-balancer --min-size 1 --max-size 1 --tags "ResourceId=my-asg,ResourceType=auto-scaling-group,Key=Name,Value=WebServer,PropagateAtLaunch=true" --vpc-zone-identifier "subnet-84d7d2c9"
 
-sudo aws autoscaling start-instance-refresh --auto-scaling-group-name my-asg --preferences '{"InstanceWarmup": 120, "MinHealthyPercentage": 50}'
 
