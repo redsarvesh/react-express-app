@@ -1,6 +1,6 @@
 FROM alpine
 
-MAINTAINER Sarvesh Kumar "saursarv@gmail.com"
+LABEL  Sarvesh Kumar "saursarv@gmail.com"
 
 RUN apk update && apk upgrade && apk add yarn npm  &&  apk add --no-cache bash git
 
